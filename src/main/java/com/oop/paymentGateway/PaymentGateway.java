@@ -21,8 +21,8 @@ public class PaymentGateway {
            case UPI:
                paymentInstrument = new UPI();
        }
-
    }
+
    public boolean pay(double amount){
        paymentInstrument.deductAmount(amount);
        return true;
